@@ -1,8 +1,10 @@
 project(ImGuizmo)
 add_library(ImGuizmo STATIC)
 
-target_include_directories(ImGuizmo PUBLIC
+target_include_directories(ImGuizmo 
+PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}
+PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/../imgui
 )
 
